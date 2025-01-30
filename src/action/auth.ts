@@ -5,6 +5,7 @@ import { SignJWT } from "jose"
 import { db } from "../app/lib/prisma"
 import { redirect } from "next/navigation"
 
+
 export async function signUp(formData: FormData) {
   try {
     const username = formData.get("username") as string
